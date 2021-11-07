@@ -14,20 +14,20 @@
 - Used constraint layouts for responsive UI's
 
 ## Built With
-Kotlin - First class and official programming language for Android development.
-Rx-Java - For composing asynchronous and event-based programs by using observable sequences.
-Android Architecture Components - Collection of libraries that help you design robust, testable, and maintainable apps.
-ViewModel - Stores UI-related data that isn't destroyed on UI changes.
-Room - SQLite object mapping library.
-Hilt - Dependency Injection Framework
-Navigation Component - Used for navigation, part of Android Jetpack
-Retrofit - A type-safe HTTP client for Android and Java.
-Gson - used to convert Java Objects into their JSON representation and vice versa.
-Ktlint -Ktlint is a static code analysis tool maintain by Pinterest. Linter and formatter for Kotlin code.
+-Kotlin - First class and official programming language for Android development.
+-Rx-Java - For composing asynchronous and event-based programs by using observable sequences.
+-Android Architecture Components - Collection of libraries that help you design robust, testable, and maintainable apps.
+-ViewModel - Stores UI-related data that isn't destroyed on UI changes.
+-Room - SQLite object mapping library.
+-Hilt - Dependency Injection Framework
+-Navigation Component - Used for navigation, part of Android Jetpack
+-Retrofit - A type-safe HTTP client for Android and Java.
+-Gson - used to convert Java Objects into their JSON representation and vice versa.
+-Ktlint -Ktlint is a static code analysis tool maintain by Pinterest. Linter and formatter for Kotlin code.
 
 ## Future Plans
-Unit & Instrumentation test cases to be added.
-Merge all code coverage reports at single place.
-Android Priority Job Queue or Work Manager can be used for offline storage support
-Reach code coverage atleast 80%.(TDD & BDD)
-Dark Mode theme
+-Unit & Instrumentation test cases to be added.
+-Merge all code coverage reports at single place.
+-Android Priority Job Queue or Work Manager can be used for offline storage support
+-Reach code coverage atleast 80%.(TDD & BDD)
+-Dark Mode theme
