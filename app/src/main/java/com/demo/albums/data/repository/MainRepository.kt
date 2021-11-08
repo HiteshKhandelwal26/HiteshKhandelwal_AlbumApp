@@ -1,14 +1,14 @@
 package com.demo.albums.data.repository
 
 import com.demo.albums.data.api.ApiHelper
-import com.demo.albums.local.dao.DaoAccess
+import com.demo.albums.local.dao.AlbumDao
 import com.demo.albums.local.entity.Album
 import javax.inject.Inject
 
 /*
 * Setting up the Repository class-
 * Have used @Inject as the Repository constructor so that whenever we need a
-* Repository object hilt will provide us Repository Object
+* Repository object, Dagger Hilt will provide us Repository Object
 *
 * The Repository class has two dependencies ApiHelper and DaoAccess
 *
@@ -19,19 +19,19 @@ import javax.inject.Inject
 * */
 class MainRepository @Inject constructor(
     private val apiService: ApiHelper,
-    private val daoAccess: DaoAccess
+    private val albumDao: AlbumDao
 ) {
     suspend fun getAlbumList() = apiService.getAlbumList()
 
     fun insertAlbum(album: Album?) {
-        daoAccess.insertAlbum(album)
+        albumDao.insertAlbum(album)
     }
 
     fun deleteAll() {
-        daoAccess.deleteAll()
+        albumDao.deleteAll()
     }
 
     fun getEntireAlbumList(): List<Album?> {
-        return daoAccess.getEntireAlbumList()
+        return albumDao.getEntireAlbumList()
     }
 }

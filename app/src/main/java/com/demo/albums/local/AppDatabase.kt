@@ -4,14 +4,14 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.demo.albums.local.dao.DaoAccess
+import com.demo.albums.local.dao.AlbumDao
 import com.demo.albums.local.entity.Album
 
 /*Database class*/
 @Database(entities = [Album::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun daoAccess(): DaoAccess
+    abstract fun daoAccess(): AlbumDao
 
     companion object {
         @Volatile

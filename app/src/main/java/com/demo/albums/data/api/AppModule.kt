@@ -4,7 +4,7 @@ import android.content.Context
 import com.demo.albums.application.NestConfig
 import com.demo.albums.data.repository.MainRepository
 import com.demo.albums.local.AppDatabase
-import com.demo.albums.local.dao.DaoAccess
+import com.demo.albums.local.dao.AlbumDao
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -16,7 +16,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-/*Setting up the App Module class-
+/*Setting up the Singleton -App Module class-
 * SingletonComponent is passed in @InstallIn here because we want the AppModule to be available for us
 * for application scope.
 * @Singleton- a single instance over the whole app.
@@ -55,7 +55,7 @@ object AppModule {
     @Provides
     fun provideRepository(
         apiHelper: ApiHelper,
-        localDataSource: DaoAccess
+        localDataSource: AlbumDao
     ) =
         MainRepository(apiHelper, localDataSource)
 }

@@ -7,7 +7,7 @@ import com.demo.albums.local.entity.Album
 
 /*DAO Interface*/
 @Dao
-interface DaoAccess {
+interface AlbumDao {
     @Insert
     fun insertAlbum(album: Album?)
 
