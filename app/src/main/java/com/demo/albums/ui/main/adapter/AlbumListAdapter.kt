@@ -13,7 +13,7 @@ import com.demo.albums.local.entity.Album
  */
 
 class AlbumListAdapter(
-    private val dataset: List<Album?>?
+    private val dataList: List<Album?>?
 ) : RecyclerView.Adapter<AlbumListAdapter.ViewHolder>() {
 
     class ViewHolder(var binding: ItemMovieListBinding) : RecyclerView.ViewHolder(
@@ -30,10 +30,10 @@ class AlbumListAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.binding.albumName.text = dataset?.get(position)?.tittle
+        holder.binding.albumName.text = dataList?.get(position)?.tittle
     }
 
     override fun getItemCount(): Int {
-        return dataset?.size ?: 0
+        return dataList?.size ?: 0
     }
 }

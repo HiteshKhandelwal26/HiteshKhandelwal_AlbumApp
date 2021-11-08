@@ -1,0 +1,15 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CheckLayoutSize" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CheckMetadata" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CheckNetwork" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DirtyRendering" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DynamicWaitTime" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="GZIPCompression" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InfoWarningFCM" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PassiveProviderLocation" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SSLSessionCaching" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="URLCaching" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>

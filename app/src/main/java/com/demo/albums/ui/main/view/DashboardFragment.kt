@@ -30,11 +30,11 @@ import kotlinx.coroutines.launch
 * */
 @AndroidEntryPoint
 class DashboardFragment : Fragment() {
-    var mBinding: FragmentDashboardBinding? = null
+    private var mBinding: FragmentDashboardBinding? = null
     private var horizontalLayout: LinearLayoutManager? = null
     private var recyclerViewLayoutManager: RecyclerView.LayoutManager? = null
-    var mSnackBar: Snackbar? = null
-    var movieListItems: AlbumList? = null
+    private var mSnackBar: Snackbar? = null
+    private var movieListItems: AlbumList? = null
     private val viewModel: MainViewModel by viewModels()
     private val mainLooper = Looper.getMainLooper()
     private var albumsListData: List<Album?>? = null

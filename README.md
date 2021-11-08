@@ -1,7 +1,7 @@
 # HiteshKhandelwal_AlbumApp
 ## About
 *A simple android app that loads Album list from (https://jsonplaceholder.typicode.com/) and stores it in persistence storage (i.e. Room Database). 
-*Album list will be always loaded from local database. Remote data (from API) and Local data is always synchronized. 
+*Album list will be loaded from local database when no internet available. Remote data (from API) and Local data is always synchronized. 
 - A single-activity pattern, using the Navigation component to manage fragment operations.
 - MVVM Architecture
 - Reactive UIs using LiveData observables and View Binding.
