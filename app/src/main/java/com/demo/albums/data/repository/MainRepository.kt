@@ -22,6 +22,8 @@ class MainRepository @Inject constructor(
     private val albumDao: AlbumDao
 ) {
     suspend fun getAlbumList() = apiService.getAlbumList()
+    //To get the detail of the album
+    suspend fun getAlbumDetail() = apiService.getAlbumDetail()
 
     fun insertAlbum(album: Album?) {
         albumDao.insertAlbum(album)

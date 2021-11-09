@@ -1,7 +1,9 @@
 package com.demo.albums.ui.main
 
 import android.os.Bundle
+import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import com.demo.albums.R
 import com.demo.albums.databinding.ActivityMainBinding
 import com.demo.albums.ui.base.BaseActivity
@@ -16,6 +18,12 @@ class MainActivity : BaseActivity() {
 
         val binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        /*Used Navigation component for fragment transaction*/
+
+        val navHostFragment:NavHostFragment = NavHostFragment()
         supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+
+        /*val navController:NavController = navHostFragment.navController
+        val appBarConfiguration:AppBarConfiguration = AppBarConfiguration(navController.graph)*/
     }
 }

@@ -6,8 +6,10 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.demo.albums.R
@@ -29,7 +31,7 @@ import kotlinx.coroutines.launch
 * @AndroidEntryPoint - Means,Hilt should provide all the dependencies to this class that it asks for.
 * */
 @AndroidEntryPoint
-class DashboardFragment : Fragment() {
+class DashboardFragment : Fragment(), AlbumListAdapter.AlbumItemListener {
     private var mBinding: FragmentDashboardBinding? = null
     private var horizontalLayout: LinearLayoutManager? = null
     private var recyclerViewLayoutManager: RecyclerView.LayoutManager? = null
@@ -139,7 +141,7 @@ class DashboardFragment : Fragment() {
         val adapter =
             activity?.let {
                 AlbumListAdapter(
-                    albumItems
+                    albumItems, this
                 )
             }
         mBinding?.listview?.layoutManager = horizontalLayout
@@ -153,5 +155,11 @@ class DashboardFragment : Fragment() {
             mBinding!!.mainLayout
         )
         mSnackBar?.show()
+    }
+
+    /*fun to load the next screen*/
+    override fun onItemClicked(mPosition: Int) {
+      /* findNavController().navigate(R.id.action_dashboardFragment_to_action_detailFragment,
+       bundleOf("id" to mPosition))*/
     }
 }

@@ -9,10 +9,17 @@
         android:id="@+id/dashboardFragment"
         android:name="com.demo.albums.ui.main.view.DashboardFragment"
         android:label="Albums"
-        tools:layout="@layout/fragment_dashboard" >
-      <!--  <action
-            android:id="@+id/action_A_to_B"
-            app:destination="@id/B" />-->
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_action_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.demo.albums.ui.main.view.DetailFragment"
+        android:label="Albums Detail"
+        tools:layout="@layout/fragment_dashboard">
 
     </fragment>
 </navigation>

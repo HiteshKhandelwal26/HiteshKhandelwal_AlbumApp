@@ -6,4 +6,5 @@ class ApiHelper @Inject constructor(
     private val apiService: ApiService
 ) {
     suspend fun getAlbumList() = apiService.getAlbumList()
+    suspend fun getAlbumDetail() = apiService.getAlbumDetail(2)
 }

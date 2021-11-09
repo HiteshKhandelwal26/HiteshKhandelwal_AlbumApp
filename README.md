@@ -31,3 +31,5 @@
 - Android Priority Job Queue or Work Manager can be used for offline storage support
 - Reach code coverage atleast 80%.(TDD & BDD)
 - Dark Mode theme
+- Network Requests in Batch (Prefetch the data, there is a possibility that wifi or mobile n/w may be very low) 
+  (https://developer.android.com/training/efficient-downloads/efficient-network-access)
